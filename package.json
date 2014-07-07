@@ -1,0 +1,18 @@
+{
+  "author": "Patrick Muff",
+  "name": "basic-app",
+  "description": "Basic NodeJS App",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.x",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "*",
+    "express-session": "*",
+    "mongojs": "*"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-sass": "*"
+  }
+}
