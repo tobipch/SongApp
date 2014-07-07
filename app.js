@@ -37,8 +37,9 @@ app.post("/newSong", function(request, response){
     var songTitle = request.body.songTitle;
     var interpreter = request.body.interpreter;
     var releaseYear = request.body.releaseYear;
+    var cid = request.body.cid;
     
-    var storage = new SongStorage(songTitle, interpreter, releaseYear);
+    var storage = new SongStorage(songTitle, interpreter, releaseYear, cid);
     storage.saveNewSong();
 });
 
@@ -54,8 +55,9 @@ app.post("/deleteSong", function(request, response){
     var songTitle = request.body.songTitle;
     var interpreter = request.body.interpreter;
     var releaseYear = request.body.releaseYear;
+    var cid = request.body.cid;
     
-    var storage = new SongStorage(songTitle, interpreter, releaseYear);
+    var storage = new SongStorage(songTitle, interpreter, releaseYear, cid);
     storage.deleteSong();
 });
 

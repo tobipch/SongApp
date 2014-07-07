@@ -60,7 +60,8 @@ $(document).ready(function(){
                 var sendData = {
                     songTitle: p_songTitle || $("#songTitleInput").val(),
                     interpreter: p_interpreter || $("#interpreterInput").val(),
-                    releaseYear: p_releaseYear || $("#releaseYearInput").val()
+                    releaseYear: p_releaseYear || $("#releaseYearInput").val(),
+                    cid: song.cid
                 };
                 
                 $.ajax({
@@ -88,6 +89,7 @@ $(document).ready(function(){
                     songTitle: element.attributes.songTitle,
                     interpreter: element.attributes.interpreter,
                     releaseYear: element.attributes.releaseYear,
+                    cid: element.cid
                 }
 
                 $.ajax({

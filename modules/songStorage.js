@@ -2,10 +2,11 @@
 var db = require("../modules/dbConnect.js");
 
 //Create SongStorage Main Object
-var SongStorage = function(title, interpreter, releaseYear){
+var SongStorage = function(title, interpreter, releaseYear, cid){
     this.title = title;
     this.interpreter = interpreter;
     this.releaseYear = releaseYear;
+    this.cid = cid;
 };
 
 //Create saveNewSong Function from SongStorage Object
@@ -13,7 +14,8 @@ SongStorage.prototype.saveNewSong = function(){
     var newSong = {
         songTitle: this.title,
         interpreter: this.interpreter,
-        releaseYear: this.releaseYear
+        releaseYear: this.releaseYear,
+        cid: this.cid
     };
     
     db.songCollection.save(newSong);
@@ -26,7 +28,8 @@ SongStorage.prototype.getAllSongs = function(callback){
 }
 
 SongStorage.prototype.deleteSong = function(){
-    db.songCollection.remove({songTitle: this.title, interpreter: this.interpreter, releaseYear: this.releaseYear},1);
+    console.log(this.cid);
+    db.songCollection.remove({cid: this.cid},1);
 }
 
 module.exports = SongStorage;
