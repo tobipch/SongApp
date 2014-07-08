@@ -21,7 +21,7 @@ npm install
 ```
 node app.js
 ```
-* *Now hack!*
+* **Now hack!**
 
 ##License
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
