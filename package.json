@@ -1,8 +1,12 @@
 {
-  "author": "Patrick Muff",
-  "name": "basic-app",
-  "description": "Basic NodeJS App",
-  "version": "0.0.1",
+  "author": "Tobias Peter",
+  "name": "SongApp",
+  "description": "SongApp",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobipch/SongApp"
+  },
   "dependencies": {
     "express": "4.x",
     "body-parser": "~1.0.0",
