@@ -1,8 +1,66 @@
+@font-face {
+    font-family: SourceSans_R;
+    src:url(../assets/fonts/SourceSans_R.otf);
+}
+
+@font-face {
+    font-family: SourceSans_L;
+    src:url(../assets/fonts/SourceSans_L.otf);
+}
+
+@font-face {
+    font-family: Anders;
+    src:url(../assets/fonts/Anders.ttf);
+}
+
 body{
-    font-family: sans-serif;   
+    font-family: SourceSans_R; 
+    background-image: url(../assets/images/bg.png);
+    background-repeat: repeat;
+}
+
+#songAppTitle{
+    font-family: Anders;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+#userInputContainer{
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.userInput{
+    padding: 5px;
+    font-size: 18px;
+    width: 23% !important;
+}
+
+#songContainer{
+    height: auto;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 2.5%;
+}
+
+#songList{
+    text-align: center;
+    list-style-type: none;
+}
+
+.song{
+    color: #d42929;
+    cursor: pointer;
+    font-family: SourceSans_R;
+    color: white;
+    font-size: 24px;
 }
 
 .song:hover{
-    color: #d42929;
-    cursor: pointer;
+    color: #ff4c4c;
 }

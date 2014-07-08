@@ -28,7 +28,6 @@ SongStorage.prototype.getAllSongs = function(callback){
 }
 
 SongStorage.prototype.deleteSong = function(){
-    console.log(this.cid);
     db.songCollection.remove({cid: this.cid},1);
 }
 

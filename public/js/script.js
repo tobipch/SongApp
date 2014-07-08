@@ -32,12 +32,22 @@ $(document).ready(function(){
         render: function(){
             this.$el.empty();
             var self = this;
-            $(this.el).append("<input type='text' placeholder='Song Title' id='songTitleInput'></input>");
-            $(this.el).append("<input type='text' placeholder='Interpreter' id='interpreterInput'></input>");
-            $(this.el).append("<input type='text' placeholder='Release Year' id='releaseYearInput'></input>");
-            $(this.el).append("<input type='button' id='addSongBtn' value='Add Song'/>");
-            $(this.el).append("<ul id='songList'></ul>");
             
+            //Render Title
+            $(this.el).append("<h1 id='songAppTitle'>The SongApp</h1>");
+            
+            //Render Input Area
+            $(this.el).append("<div id='userInputContainer'></div>");
+            $("#userInputContainer",this.el).append("<input type='text' placeholder='Song Title' id='songTitleInput' class='userInput form-control'></input>");
+            $("#userInputContainer",this.el).append("<input type='text' placeholder='Interpreter' id='interpreterInput' class='userInput form-control'></input>");
+            $("#userInputContainer",this.el).append("<input type='text' placeholder='Release Year' id='releaseYearInput' class='userInput form-control'></input>");
+            $("#userInputContainer",this.el).append("<input type='button' id='addSongBtn' class='userInputBtn btn btn-success' value='Add Song'/>");
+            $("#userInputContainer",this.el).append("<input type='button' id='deleteAllSongsBtn' class='userInputBtn btn btn-danger'  value='Delete All Songs'/>");
+            
+            $(this.el).append("<div id='songContainer'></div>");
+            $("#songContainer",this.el).append("<ul id='songList'></ul>");
+            
+            //Render Songs
             _(this.collection.models).each(function(song){
                 self.appendSong(song);
             },this);
@@ -75,7 +85,7 @@ $(document).ready(function(){
         },
         
         appendSong: function(song){
-            $("ul",this.el).append("<li class='song' id=" + song.cid + "><b>" + song.get("songTitle") + "</b> - " + song.get("interpreter") + " <i>(" + song.get("releaseYear") + ")</i></li>")
+            $("ul",this.el).append("<li class='song' id=" + song.cid + "><b>" + song.get("songTitle") + "</b> from " + song.get("interpreter") + " in<i> " + song.get("releaseYear") + "</i></li>")
         },
         
         deleteSong: function(song){
