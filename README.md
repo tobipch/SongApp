@@ -7,21 +7,21 @@ This Project helped me to understand several concepts of these Libraries / Servi
 This Project can be used freely for demonstration and experimentation. So feel free to fork and improve this project.
 
 ##How to install the SongApp
-1. [Install Node.js](http://nodejs.org/)
-2. [Install MongoDB](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/)
-3. [Start MongoDB](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/#start-mongodb)
-4. [Download this Project as .zip](https://github.com/tobipch/SongApp/archive/master.zip)
-5. Extract Project to any location
-6. [Open Command Line](http://www.bleepingcomputer.com/tutorials/windows-command-prompt-introduction/) and go to Project folder
-7. Run this command 
+* [Install Node.js](http://nodejs.org/)
+* [Install MongoDB](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/)
+* [Start MongoDB](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/#start-mongodb)
+* [Download this Project as .zip](https://github.com/tobipch/SongApp/archive/master.zip)
+* Extract Project to any location
+* [Open Command Line](http://www.bleepingcomputer.com/tutorials/windows-command-prompt-introduction/) and go to Project folder
+* Run this command 
 ```
 npm install
 ```
-8. Run this command 
+* Run this command 
 ```
 node app.js
 ```
-9. *Now hack!*
+* *Now hack!*
 
 ##License
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
