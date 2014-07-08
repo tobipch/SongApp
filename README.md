@@ -13,8 +13,14 @@ This Project can be used freely for demonstration and experimentation. So feel f
 4. [Download this Project as .zip](https://github.com/tobipch/SongApp/archive/master.zip)
 5. Extract Project to any location
 6. [Open Command Line](http://www.bleepingcomputer.com/tutorials/windows-command-prompt-introduction/) and go to Project folder
-7. Run this command '''npm install'''
-8. Run this command '''node app.js'''
+7. Run this command 
+'''
+npm install
+'''
+8. Run this command 
+'''
+node app.js
+'''
 9. *Now hack!*
 
 ##License
